@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,400;1,900&family=Rubik+Burned&display=swap");
+
+@font-face {
+  font-family: "American Captain"; 
+  src: url(./fonts/American_Captain.ttf); 
+}
+body{
+  overflow-x: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body {
+    background-color:#eee;
+    color:#555;
+    font:14px Arial,sans-serif;
+}
+
+h2{
+        font-size: 40px;
+        font-family: "Rubik Burned", system-ui;
+        text-align: center;
+}
+
+.container {
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+}
+.din{
+    position: relative;
+    top: 15%; 
+    left: 5px;
+    width:25px;
+    height:30px;
+    background-image: url(https://i.ibb.co/Sm6ng3Z/imgonline-com-ua-Resize-Zo-Q8an-Jyt-Wv-EG0.png);
+      animation: plays 1s steps(6) infinite, move 10s 0.5s linear forwards infinite;
+      }
+      @keyframes plays { 
+      0% { 
+      background-position: 0 0; 
+      } 
+   
+      100% { background-position: -180px 0; }
+      }
+   @keyframes move{
+     from{
+       top: 15%; 
+    left: -50px;
+     }
+     to{
+       top: 15%; 
+    left: 110%;
+     }
+   }
+   p{
+    padding: 5px;
+}
+
+
+.near-footer h1{
+  background-color: #000000;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 3em;
+}
+.near-footer p{
+  column-count: 2;
+  text-align: center;
+}
+.footer{
+  background-color: #000000;
+}
+.footer h3{
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+.java{
+  position: relative;
+  top: -40px; 
+  left: 1350px;
+  width:50px;
+  height:57px;
+  background-image: url(/images/chel.jpg);
+    animation: play 1s steps(8) infinite;
+  }
+ @keyframes play { 
+    0% { 
+    background-position: 0 0; 
+    } 
+ 
+    100% { background-position: -395px 0; }
+    }
+
+    #plavat{
+      top: -50px;
+      left: 0;
+      min-width: 50%;
+      margin-left: 100px;
+  }
+ .near-footer .a{
+      display: block;
+      margin: auto;
+      font-size: 2em;
+      margin: 10px;
+  }
+.near-footer .a a{
+      display: block;
+      margin: auto;
+      width: 180px;
+      margin-top: 20px;
+      background-color: #868686;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+  }
+.near-footer .a a:hover{
+      background-color: #ffffff;
+      color: #868686;
+  }
+p{
+  padding: 5px;
+}
+h1{
+  font-family: "Rubik Burned", system-ui;
+}
+a{
+  text-decoration: none;
+}
+
+
+@media screen and ( max-width: 1030px ) {
+  .java{
+      left: 90%;
+  }
+}

@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,400;1,900&family=Rubik+Burned&display=swap");
+
+@font-face {
+  font-family: "American Captain"; /* Гарнитура шрифта */
+  src: url(./fonts/American_Captain.ttf); /* Путь к файлу со шрифтом */
+}
+html{
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+}
+body{
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+
+
+
+/* .head{
+    background-color: #9af5ff;
+    width: 100%;
+    
+} */
+h1{
+    font-family: "Rubik Burned", system-ui;
+}
+
+.head .nad-header{
+    height: 120px;
+    /* background-color: #9af5ff; */
+    background-color: #fff;
+    z-index: 3;
+}
+
+.logo{
+    width: 90px;
+    height: 90px;
+    position: fixed;
+    top: -1%;
+    left: -1%;
+}
+.nav{
+    position: fixed;
+    left: 90%;
+    z-index: 2;
+}
+.nav ul{ 
+    position:relative;   
+    list-style:none;
+    font-family:Arial,Verdana,sans-serif;
+    font-size:18px; 
+    margin-left: -40px;    
+}
+
+a{ 
+    text-decoration:none;
+}
+
+ul.nav a{ 
+    display:block;
+    background:rgba(10, 124, 159, 0.75); 
+    color:#fff; 
+    padding:5px;
+} 
+
+ul.nav > li{
+    position:relative;    
+    display: inline-block;
+    margin-right:15px;
+}
+
+ul.nav ul{ 
+    position:absolute; 
+    list-style:none; 
+    left:-9999px;  
+    opacity:0; 
+    transition:opacity 0.5s linear; 
+} 
+
+ul.nav ul li{
+    padding-top:1px;         
+}
+
+ul.nav ul a{ 
+    white-space:nowrap; 
+}
+
+ul.nav li:hover ul{ 
+    left:0px; 
+    opacity:1; 
+} 
+
+ul.nav li a:hover{ 
+    background:rgb(105, 206, 208);
+}
+
+.head .header{
+    /* background-color: #7ff2ff; */
+    margin: 0;
+    width: 100vw;
+    z-index: 1;
+}
+.title{
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+    
+}
+/* .header h1.h1_span{
+    left: 3116px;
+     top: 0px;
+      position: absolute;
+       translate: none;
+        rotate: none;
+         scale: none;
+          transform: translate(-100%, 0%)
+           
+}
+.header span.h1_span{
+     translate: none;
+      rotate: none; 
+      scale: none; 
+      opacity: 1; 
+      transform: translate(0px, 0px);
+} */
+.head .after-header{
+    /* background-color: #61efff; */
+    background-color: #000000;
+
+    padding: 10px;
+    
+}
+.head .after-header p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+.head .after-header .mech{
+    border: solid dotted 3px;
+}
+.head .after-header img{
+    width: 250px;
+    height: 250px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
+.body .main1{
+    /* background-color: #21e9ff; */
+    background-color: #fff;
+    margin: 10px;
+}
+.body .main1 .section1{
+    display: flex;
+}
+.body .main1 .section1 img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+.body .main1 .section1 h2{
+    text-align: center;
+    font-size: 2em;
+}
+.body .main1 .section1 p{
+    text-align: center;
+}
+.body .main1 .section2{
+    margin: 10px;
+    display: flex;
+} 
+.body .main1 .section2 img{
+    width: 350px;
+    height: 350px;
+    display: block;
+    margin: auto;
+}
+.body .main1 .section2 h2{
+    text-align: center;
+    font-size: 2em;
+    order: 3;
+}
+.body .main1 .section2 p{
+    text-align: center;
+    
+}
+.body .after-main1 h1{
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+.body .main2 .img{
+    /* margin-left: 400px;
+    transition: all 5s; */
+    display: block;
+    margin-left: 380px;
+    margin-top: 10px;
+    
+}
+.body .main2 img{
+    height: 180px;
+    width: 180px;
+    transition: all 0.5s;
+    margin-right: 20px;
+}
+.body .main2 img:hover{
+    width: 320px;
+}
+.foot .near-footer h1{
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+.foot .near-footer p{
+    column-count: 2;
+    text-align: center;
+}
+.foot .footer{
+    background-color: #000000;
+}
+.foot .footer h3{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.java{
+    position: relative;
+    top: -70px; 
+    left: 80%;
+    width:50px;
+    height:57px;
+    background-image: url(/images/chel.jpg);
+      animation: play 1s steps(8) infinite;
+    }
+   @keyframes play { 
+      0% { 
+      background-position: 0 0; 
+      } 
+   
+      100% { background-position: -395px 0; }
+      }
+
+      #plavat{
+        top: -50px;
+        left: 0;
+        max-width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .foot .near-footer .a{
+        display: block;
+        font-size: 2em;
+    }
+    .foot .near-footer .a a{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: 180px;
+        background-color: #868686;
+        color: #fff;
+        text-align: center;
+    }
+    .foot .near-footer .a a:hover{
+        background-color: #fff;
+        color: #868686;
+    }
+p{
+    padding: 5px;
+}
+@media screen and (max-width: 1472px){
+    .body .main2 img{
+        height: 180px;
+        width: 180px;
+        transition: all 0.5s;
+        margin: 10px;
+        
+    }
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 225px;
+        margin-top: 10px;
+        
+    }
+    .foot .near-footer .a a{
+        margin-top: 10px;
+    }
+    .body .main1 .section1 p{
+        text-align: center;
+        padding: 10px;
+    }
+    .body .main1 .section2 p{
+        text-align: center;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 1177px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 165px;
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width: 1116px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 125px;
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width: 1076px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 95px;
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width: 1047px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 65px;
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width: 1017px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 25px;
+        margin-top: 10px;
+        
+    }
+}
+@media screen and (max-width: 977px){
+    .body .main2 .img{
+        
+        display: block;
+        margin-left: 5px;
+        margin-top: 10px;
+        
+    }
+    .a{
+        margin-left: 10px;
+    }
+    .java{
+        left: 90%;
+    }
+    .body .main2 img{
+        height: 180px;
+        width: 180px;
+        transition: all 0.5s;
+        margin-right: 20px;
+    }
+    .body .main2 img:hover{
+        width: 260px;
+    }
+}
+@media screen and (max-width: 936px){
+    .body .main2 .img{
+        
+        display: block;
+        /* margin: auto; */
+        margin-left: 300px;
+        margin-top: 10px;
+        
+    }
+
+}
+@media screen and (max-width: 884px){
+    .body .main2 .img{
+        
+        display: block;
+        /* margin: auto; */
+        margin-left: 250px;
+        margin-top: 10px;
+        
+    }
+
+}
+@media screen and (max-width: 800px){
+    .body .main2 .img{
+        
+        display: block;
+        /* margin: auto; */
+        margin-left: 200px;
+        margin-top: 10px;
+        
+    }
+
+}
+@media screen and (max-width: 728px){
+    .body .main2 .img{
+        
+        display: block;
+        /* margin: auto; */
+        margin-left: 150px;
+        margin-top: 10px;
+        
+    }
+    .java{
+        left: 90%;
+    }
+
+}
+@media screen and (max-width: 712px){
+
+    .java{
+        left: 92%;
+    }
+
+}
+@media screen and (max-width: 678px){
+    .body .main2 .img{
+        
+        display: block;
+        /* margin: auto; */
+        margin-left: 120px;
+        margin-top: 10px;
+        
+    }
+    .java{
+        left: 94%;
+    }
+
+}

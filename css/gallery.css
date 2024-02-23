@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,400;1,900&family=Rubik+Burned&display=swap");
+
+@font-face {
+  font-family: "American Captain"; 
+  src: url(./fonts/American_Captain.ttf); 
+}
+body{
+    overflow-x: hidden;
+}
+#wrap{	
+	width:490px;
+	margin:40px auto;
+	}
+#wrap a{
+	display:inline-block;
+	background:#fff;
+	margin-top:13px;
+	padding:5px;
+  background-color: grey;
+}	
+#wrap a:hover    { 
+	background:lightgrey;
+ }
+.pressbox {
+	width: 0; 
+	height: 0; 
+	position: fixed; 
+	overflow: hidden; 
+	left: 0; 
+	top: 0; 
+	z-index: 9999; 
+	text-align: center; 
+	background: rgba(0,0,0,0.7);
+} 
+.pressbox img {
+	opacity: 0; 
+	padding: 10px; 
+	background: #ffffff; 
+	margin-top: 100px;  
+	box-shadow: 0px 0px 15px #444; 
+	transition: opacity .25s ease-in-out;
+} 
+.pressbox:target { 
+	width: auto; 
+	height: auto; 
+	bottom: 0; 
+	right: 0; 
+} 
+.pressbox:target img {
+	opacity: 1; 
+}
+h1{
+    text-align: center;
+    color: #959595;
+    font-size: 3em;
+    font-family: "Rubik Burned", system-ui;
+}
+#container {
+    position: relative;
+    margin: 50px auto;
+    margin-left: -25px;
+    width: 502px;
+    height: 303px;
+    z-index: 1;
+    perspective: 1000px;
+    }
+  #card {
+    width: 100%;
+    height: 100%;
+    box-shadow: 5px 5px 5px #aaa;
+    transform-style: preserve-3d;
+    transition: all 1.0s linear;
+    border: dashed 3px;
+    }
+  #container:hover #card {
+    box-shadow: 5px -5px 5px #aaa;
+    transform: rotateX(180deg);
+    }
+  .front {
+    position: absolute;
+    backface-visibility: hidden;
+    }
+  .back {
+    backface-visibility: hidden;
+    transform: rotateY(180deg) rotateZ(180deg);
+    border-top: dashed;
+    }
+  .back p{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translateX(-50%);
+    font-size: 25px;
+    font-family: "Segoe Print", Verdana, sans-serif;
+    text-align: center;
+    color: #fff;
+  }
+  .foot .near-footer h1{
+    background-color: #000000;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+}
+.foot .near-footer p{
+    column-count: 2;
+    text-align: center;
+}
+.foot .footer{
+    background-color: #000000;
+}
+.foot .footer h3{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+.java{
+    position: relative;
+    top: -70px; 
+    left: 1350px;
+    width:50px;
+    height:57px;
+    background-image: url(/images/chel.jpg);
+      animation: play 1s steps(8) infinite;
+    }
+   @keyframes play { 
+      0% { 
+      background-position: 0 0; 
+      } 
+   
+      100% { background-position: -395px 0; }
+      }
+
+      #plavat{
+        top: -50px;
+        left: 0;
+        min-width: 50%;
+        margin-left: 100px;
+    }
+    .foot .near-footer .a{
+        display: flex;
+        font-size: 2em;
+    }
+    .foot .near-footer .a a{
+        display: block;
+        margin: auto;
+        width: 180px;
+        background-color: #868686;
+        color: #fff;
+        text-align: center;
+    }
+    .foot .near-footer .a a:hover{
+        background-color: #ffffff;
+        color: #868686;
+    }
+    a{
+        text-decoration: none;
+        vertical-align: top;
+    }
+    .a{
+        display: block;
+        margin: auto;
+    }
+    .foot .near-footer .a{
+        display: block;
+        font-size: 2em;
+    }
+    .foot .near-footer .a a{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        width: 180px;
+        background-color: #868686;
+        color: #fff;
+        text-align: center;
+    }
+    .foot .near-footer .a a:hover{
+        background-color: #fff;
+        color: #868686;
+    }
+    @media screen and ( max-width: 1682px ) {
+        .java{
+            left: 90%;
+        }
+    }
+    @media screen and ( max-width: 751px ) {
+        .java{
+            left: 90%;
+            top: -10px;
+        }
+    }

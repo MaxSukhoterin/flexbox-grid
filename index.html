@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/reestr.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h3>Реєстрація</h3>
+    </header>
+    <main>
+      <section>
+        <form action="page.html" class="form1">
+          <h2>Введіть логін:</h2>
+          <input
+            name="login"
+            type="text"
+            placeholder="Введіть своє ПІБ"
+            pattern="[А-Яа-яA-Za-z]{3, 45}"
+            required
+          />
+          <br />
+          <h2>Введіть пароль:</h2>
+          <input
+            name="email"
+            type="email"
+            placeholder="Введіть email"
+            required
+          />
+          <br />
+          <input
+            name="password"
+            type="password"
+            placeholder="Введіть пароль"
+            pattern="[A-Za-z0-9]{3,45}"
+            required
+          />
+          <br />
+          <h2>Введіть свої контактні дані:</h2>
+          <input
+            name="tel1"
+            type="tel"
+            pattern="\+38[0-9]{10}"
+            placeholder="Телефон у форматі +380000000000"
+            required
+          />
+          <p>+380435436571(приклад)</p>
+          <br />
+          <br />
+          <h2>Введіть свою дату народження</h2>
+          <input type="date" required />
+          <br /><br />
+          <button type="submit">OK</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

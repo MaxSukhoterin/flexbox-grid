@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,500;0,900;1,100;1,400;1,900&family=Rubik+Burned&display=swap");
+
+@font-face {
+  font-family: "American Captain"; 
+  src: url(./fonts/American_Captain.ttf); 
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+}
+h1, h3{
+    text-align: center;
+    color: rgb(174, 174, 174);
+    font-size: 60px;
+    font-family: "Rubik Burned", system-ui;
+}
+p{
+    text-align: center;
+    
+}
+section.class>h2{
+  text-align: center;
+}
+ul.menu li{
+  list-style-type: none;
+  display: block;
+  margin: 0 610px;
+  width: 220px;
+  text-align: center;
+  padding: 10px;
+  background-color: blue;
+  
+}
+ul.menu li a{
+  text-decoration: none;
+  color: aliceblue;
+}
+ul.menu li:hover{
+  background-color: rgb(17, 17, 115);
+}
+ul.menu li a:hover{
+  
+  color: blanchedalmond;
+}
+form.form1>h2{
+  text-align: center;
+}
+form.form1>input{
+  display: block;
+  margin: auto;
+}
+form.form1>button{
+  display: block;
+  margin: auto;
+}
+form.form1>input:invalid{
+  background-color: white;
+  border: 2px solid red;
+}
+form.form1>input:valid{
+  background-color: white;
+  border: 2px solid rgb(0, 255, 8);
+}
